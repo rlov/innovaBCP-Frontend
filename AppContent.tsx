@@ -11,6 +11,7 @@ import { setStatusBarHeight } from './src/context/reducers/layout';
 import PitchInStack from './src/navigation/PitchInStack';
 import JoinToPitchInPage from './src/screens/pitchIn/JoinToPitchInPage';
 import SendSuccesfullyRequestPage from './src/screens/pitchIn/SendSuccesfullyRequestPage';
+import PendingPitchInPage from './src/screens/pitchIn/PendingPitchInPage';
 
 const MainStack = createStackNavigator();
 
@@ -60,6 +61,10 @@ export default function AppContent(): JSX.Element {
       <MainStack.Screen
         name={NAVIGATION_PAGES.SEND_SUCCESFULLY_REQUEST_PAGE}
         component={SendSuccesfullyRequestPage}
+      />
+      <MainStack.Screen
+        name={NAVIGATION_PAGES.PENDING_PITCH_IN_DETAILS_PAGE}
+        component={PendingPitchInPage}
       />
     </MainStack.Navigator>
   );

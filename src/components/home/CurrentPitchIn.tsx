@@ -1,17 +1,22 @@
 import { useNavigation } from '@react-navigation/native';
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { TouchableRipple } from 'react-native-paper';
 import colors from '../../constants/colors';
 import { NAVIGATION_PAGES } from '../../constants/navigation';
 
 export default function CurrentPitchIn() {
+  const [currentStatus, setCurrentStatus] = useState('pending');
   const navigation = useNavigation();
 
   const handlPress = () => {
-    navigation.navigate(NAVIGATION_PAGES.JOIN_TO_PITCH_IN_PAGE, {
-      type: 'DETAILS',
-    });
+    if (currentStatus === 'in-progress') {
+      navigation.navigate(NAVIGATION_PAGES.JOIN_TO_PITCH_IN_PAGE, {
+        type: 'DETAILS',
+      });
+    } else {
+      navigation.navigate(NAVIGATION_PAGES.PENDING_PITCH_IN_DETAILS_PAGE);
+    }
   };
 
   return (
@@ -20,16 +25,20 @@ export default function CurrentPitchIn() {
       <TouchableRipple style={styles.touchable} onPress={handlPress}>
         <View style={styles.card}>
           <View style={styles.header}>
-            <Text style={[styles.text, styles.status]}>On going</Text>
+            <Text style={[styles.text, styles.status]}>
+              {currentStatus === 'in-progress' ? 'On going' : 'Pendiente'}
+            </Text>
             <View style={styles.nameContainer}>
               <Text style={styles.name}>Lucy</Text>
             </View>
           </View>
           <Text style={styles.total}>S/ 6000</Text>
-          <View style={styles.footer}>
-            <Text style={styles.text}>Fecha de recepción</Text>
-            <Text style={[styles.text, { marginTop: 6 }]}>31/12/2023</Text>
-          </View>
+          {currentStatus === 'in-progress' && (
+            <View style={styles.footer}>
+              <Text style={styles.text}>Fecha de recepción</Text>
+              <Text style={[styles.text, { marginTop: 6 }]}>31/12/2023</Text>
+            </View>
+          )}
         </View>
       </TouchableRipple>
     </View>

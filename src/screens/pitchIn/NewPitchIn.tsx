@@ -10,6 +10,7 @@ import LabelWrapper from '../../components/newPitchIn/LabelWrapper';
 import CurrencySelector from '../../components/newPitchIn/CurrencySelector';
 import PeriodSelector from '../../components/newPitchIn/PeriodSelector';
 import CustomInput from '../../components/newPitchIn/CustomInput';
+import { NAVIGATION_PAGES } from '../../constants/navigation';
 
 export default function NewPitchIn() {
   const statusBarHeight = useSelector((state: RootState) => state.layout.statusBarHeight);
@@ -25,6 +26,10 @@ export default function NewPitchIn() {
   };
 
   const handleInputChange = () => {};
+
+  const handlePress = () => {
+    navigation.navigate(NAVIGATION_PAGES.PITCH_IN_STEPPER_PAGE);
+  };
 
   return (
     <View style={styles.container}>
@@ -92,6 +97,7 @@ export default function NewPitchIn() {
           title={'Crear junta'}
           buttonStyle={[styles.button]}
           titleStyle={styles.buttonTitle}
+          onPress={handlePress}
         />
       </View>
     </View>

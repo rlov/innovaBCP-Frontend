@@ -7,6 +7,7 @@ import {
 } from '@react-navigation/stack';
 import { NAVIGATION_PAGES } from '../constants/navigation';
 import NewPitchIn from '../screens/pitchIn/NewPitchIn';
+import StepperPitch from '../screens/pitchIn/StepperPitch';
 
 const MyPitchInStack = createStackNavigator();
 
@@ -16,6 +17,13 @@ export default function PitchInStack(): JSX.Element {
       <MyPitchInStack.Screen
         name={NAVIGATION_PAGES.NEW_PITCH_IN_PAGE}
         component={NewPitchIn}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <MyPitchInStack.Screen
+        name={NAVIGATION_PAGES.PITCH_IN_STEPPER_PAGE}
+        component={StepperPitch}
         options={{
           headerShown: false,
         }}

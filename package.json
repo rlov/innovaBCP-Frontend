@@ -11,6 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/datetimepicker": "~3.0.8",
     "@react-native-masked-view/masked-view": "~0.2.9",
     "@react-navigation/bottom-tabs": "~6.5.7",
     "@react-navigation/material-top-tabs": "~6.6.2",
@@ -20,6 +21,7 @@
     "@reduxjs/toolkit": "~1.9.5",
     "axios": "~0.21",
     "axios-auth-refresh": "~3.2.2",
+    "moment": "^2.29.4",
     "patch-package": "~6.5.1",
     "postinstall-postinstall": "~2.1.0",
     "react": "18.2.0",
@@ -28,6 +30,7 @@
     "react-native-elements": "~3.4.3",
     "react-native-gesture-handler": "~2.9.0",
     "react-native-keyboard-aware-scroll-view": "~0.9.5",
+    "react-native-modal-datetime-picker": "~9.1.0",
     "react-native-pager-view": "~6.2.0",
     "react-native-paper": "~5.6.0",
     "react-native-reanimated": "~2.14.4",

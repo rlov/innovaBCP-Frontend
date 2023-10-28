@@ -14,8 +14,6 @@ export default function JoinToPitchInPage({ route }): JSX.Element {
   const statusBarHeight = useSelector((state: RootState) => state.layout.statusBarHeight);
   const navigation = useNavigation();
 
-  console.log({ type });
-
   const membersList = [
     {
       name: 'Fátima Débora',
