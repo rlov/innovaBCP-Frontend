@@ -12,6 +12,7 @@ import PitchInStack from './src/navigation/PitchInStack';
 import JoinToPitchInPage from './src/screens/pitchIn/JoinToPitchInPage';
 import SendSuccesfullyRequestPage from './src/screens/pitchIn/SendSuccesfullyRequestPage';
 import PendingPitchInPage from './src/screens/pitchIn/PendingPitchInPage';
+import SuccesfullyQuote from './src/components/pitchIn/SuccesfullyQuote';
 
 const MainStack = createStackNavigator();
 
@@ -65,6 +66,10 @@ export default function AppContent(): JSX.Element {
       <MainStack.Screen
         name={NAVIGATION_PAGES.PENDING_PITCH_IN_DETAILS_PAGE}
         component={PendingPitchInPage}
+      />
+      <MainStack.Screen
+        name={NAVIGATION_PAGES.SUCCESFULLY_QUOTE}
+        component={SuccesfullyQuote}
       />
     </MainStack.Navigator>
   );

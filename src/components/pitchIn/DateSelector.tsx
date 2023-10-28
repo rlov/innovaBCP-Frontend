@@ -34,7 +34,7 @@ export default function DateSelector({ setCurrentStep, currentStep }: Props) {
   const [pickerDateIsVisible, setPickerDateIsVisible] = useState(false);
 
   const handlePress = () => {
-    setCurrentStep(currentStep + 1);
+    setCurrentStep(3);
   };
 
   const hideDatePicker = () => {
@@ -129,6 +129,8 @@ export default function DateSelector({ setCurrentStep, currentStep }: Props) {
         onCancel={hideDatePicker}
         minimumDate={new Date()}
       />
+      {/*  {pickerDateIsVisible && (
+      )} */}
     </View>
   );
 }

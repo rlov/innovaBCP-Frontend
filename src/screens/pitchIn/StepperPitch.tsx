@@ -20,6 +20,8 @@ export default function StepperPitch() {
     navigation.navigate(NAVIGATION_PAGES.HOME_PAGE);
   };
 
+  console.log({ currentStep });
+
   return (
     <View style={styles.container}>
       <View style={[styles.header, { marginTop: statusBarHeight }]}>
@@ -34,9 +36,9 @@ export default function StepperPitch() {
       {currentStep === 1 ? (
         <InviteFriends setCurrentStep={setCurrentStep} currentStep={currentStep} />
       ) : currentStep === 2 ? (
-        <DateSelector />
+        <DateSelector setCurrentStep={setCurrentStep} currentStep={currentStep} />
       ) : (
-        <PayQuote />
+        <PayQuote setCurrentStep={setCurrentStep} currentStep={currentStep} />
       )}
     </View>
   );

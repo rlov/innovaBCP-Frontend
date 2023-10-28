@@ -16,4 +16,5 @@ export const NAVIGATION_PAGES = {
   JOIN_TO_PITCH_IN_PAGE: 'join-to-pitch-in',
   SEND_SUCCESFULLY_REQUEST_PAGE: 'send-succesfull-request',
   PITCH_IN_STEPPER_PAGE: 'pitch-in-stepper-page',
+  SUCCESFULLY_QUOTE: 'succesfully-quote',
 };
