@@ -7,6 +7,7 @@ import MemberDetails from '../../components/pitchIn/MemberDetails';
 import { Button, Icon } from 'react-native-elements';
 import colors from '../../constants/colors';
 import { useNavigation } from '@react-navigation/native';
+import { NAVIGATION_PAGES } from '../../constants/navigation';
 
 export default function JoinToPitchInPage(): JSX.Element {
   const statusBarHeight = useSelector((state: RootState) => state.layout.statusBarHeight);
@@ -193,6 +194,10 @@ export default function JoinToPitchInPage(): JSX.Element {
     navigation.goBack();
   };
 
+  const handlePress = () => {
+    navigation.navigate(NAVIGATION_PAGES.SEND_SUCCESFULLY_REQUEST_PAGE);
+  };
+
   return (
     <View style={[styles.container, { paddingTop: statusBarHeight }]}>
       <View style={[styles.header]}>
@@ -227,6 +232,7 @@ export default function JoinToPitchInPage(): JSX.Element {
           title={'Unirte a la junta'}
           buttonStyle={[styles.button]}
           titleStyle={styles.buttonTitle}
+          onPress={handlePress}
         />
       </View>
     </View>
