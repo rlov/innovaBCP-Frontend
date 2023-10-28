@@ -12,4 +12,5 @@ export const NAVIGATION_PAGES = {
   GENERAL_SEARCH_PAGE: 'general-search',
   NEW_PITCH_IN_PAGE: 'new-pitch-in',
   PITCH_IN_DETAILS_PAGE: 'pitch-in-details',
+  JOIN_TO_PITCH_IN_PAGE: 'join-to-pitch-in',
 };

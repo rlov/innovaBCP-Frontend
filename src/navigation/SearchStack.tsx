@@ -6,6 +6,7 @@ import Home from '../screens/home/Home';
 import { NAVIGATION_PAGES } from '../constants/navigation';
 import colors from '../constants/colors';
 import GeneralSearch from '../screens/search/GeneralSearch';
+import JoinToPitchInPage from '../screens/pitchIn/JoinToPitchInPage';
 
 const MySearchStack = createStackNavigator();
 
