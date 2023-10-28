@@ -4,6 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NAVIGATION_STACKS } from '../constants/navigation';
 import CustomBottomTabs from '../components/navigation/CustomBottomTabs';
+import HomeStack from './HomeStack';
 
 const MyBottomTabNavigator = createBottomTabNavigator();
 
@@ -20,7 +21,7 @@ export default function BottomTabNavigator(): JSX.Element {
       tabBar={props => <CustomBottomTabs {...props} />}>
       <MyBottomTabNavigator.Screen
         name={NAVIGATION_STACKS.HOME_STACK}
-        component={TestComponent}
+        component={HomeStack}
         options={{ title: 'Inicio' }}
       />
       <MyBottomTabNavigator.Screen
