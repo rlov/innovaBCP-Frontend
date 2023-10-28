@@ -16,6 +16,9 @@ export default function PitchInStack(): JSX.Element {
       <MyPitchInStack.Screen
         name={NAVIGATION_PAGES.NEW_PITCH_IN_PAGE}
         component={NewPitchIn}
+        options={{
+          headerShown: false,
+        }}
       />
     </MyPitchInStack.Navigator>
   );
