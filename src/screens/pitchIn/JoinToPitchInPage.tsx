@@ -9,9 +9,12 @@ import colors from '../../constants/colors';
 import { useNavigation } from '@react-navigation/native';
 import { NAVIGATION_PAGES } from '../../constants/navigation';
 
-export default function JoinToPitchInPage(): JSX.Element {
+export default function JoinToPitchInPage({ route }): JSX.Element {
+  const type = route?.params?.type;
   const statusBarHeight = useSelector((state: RootState) => state.layout.statusBarHeight);
   const navigation = useNavigation();
+
+  console.log({ type });
 
   const membersList = [
     {
@@ -206,7 +209,8 @@ export default function JoinToPitchInPage(): JSX.Element {
           icon={<Icon type="material-community" name="arrow-left" color={colors.MAIN} />}
           onPress={goBack}
         />
-        <Text style={styles.title}>Unirte a la junta</Text>
+        {type !== 'DETAILS' && <Text style={styles.title}>Unirte a la junta</Text>}
+        {type == 'DETAILS' && <Text style={styles.title}>Detalles de la junta</Text>}
       </View>
       <FlatList
         showsVerticalScrollIndicator={false}
@@ -227,14 +231,16 @@ export default function JoinToPitchInPage(): JSX.Element {
           />
         }
       />
-      <View style={styles.footer}>
-        <Button
-          title={'Unirte a la junta'}
-          buttonStyle={[styles.button]}
-          titleStyle={styles.buttonTitle}
-          onPress={handlePress}
-        />
-      </View>
+      {type !== 'DETAILS' && (
+        <View style={styles.footer}>
+          <Button
+            title={'Unirte a la junta'}
+            buttonStyle={[styles.button]}
+            titleStyle={styles.buttonTitle}
+            onPress={handlePress}
+          />
+        </View>
+      )}
     </View>
   );
 }

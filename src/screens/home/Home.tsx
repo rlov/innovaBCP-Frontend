@@ -14,6 +14,7 @@ import AppIcon from '../../assets/icons/AppIcon';
 import { NAVIGATION_PAGES, NAVIGATION_STACKS } from '../../constants/navigation';
 import OptionItem from '../../components/home/OptionItem';
 import HomeOptionItem from '../../interfaces/HomeOptionItem';
+import CurrentPitchIn from '../../components/home/CurrentPitchIn';
 
 const optionsList: HomeOptionItem[] = [
   {
@@ -74,6 +75,10 @@ export default function Home(): JSX.Element {
     });
   };
 
+  const handlePress = () => {
+    navigation.navigate(NAVIGATION_STACKS.SEARCH_STACK);
+  };
+
   return (
     <Animated.View
       style={[styles.container, animatedStyles, { paddingTop: statusBarHeight }]}>
@@ -101,6 +106,7 @@ export default function Home(): JSX.Element {
               title={'Unirte a una junta'}
               buttonStyle={[styles.button, styles.secondaryButton]}
               titleStyle={[styles.buttonTitle, { color: 'black' }]}
+              onPress={handlePress}
             />
             <View style={styles.imageContainer}>
               <Image
@@ -112,6 +118,7 @@ export default function Home(): JSX.Element {
         )}
         {hasPitchIn && (
           <>
+            <CurrentPitchIn />
             <Text style={styles.text}>Otras opciones:</Text>
             {optionsList.map((option, index) => (
               <OptionItem {...option} key={index} />
