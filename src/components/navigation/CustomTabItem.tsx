@@ -45,13 +45,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   label: {
-    fontFamily: 'Figtree-SemiBold',
+    /*     fontFamily: 'Figtree-SemiBold', */
     marginTop: 5,
     color: '#919192',
     fontSize: 13,
   },
   selectedLabel: {
-    color: colors.MAIN_2,
+    color: colors.MAIN,
     fontWeight: '600',
   },
 });

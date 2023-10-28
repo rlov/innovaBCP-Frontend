@@ -21,17 +21,17 @@ export default function BottomTabNavigator(): JSX.Element {
       <MyBottomTabNavigator.Screen
         name={NAVIGATION_STACKS.HOME_STACK}
         component={TestComponent}
-        options={{ title: 'Titulares' }}
+        options={{ title: 'Inicio' }}
       />
       <MyBottomTabNavigator.Screen
         name={NAVIGATION_STACKS.SEARCH_STACK}
         component={TestComponent}
-        options={{ title: 'Titulares' }}
+        options={{ title: 'Explorar' }}
       />
       <MyBottomTabNavigator.Screen
         name={NAVIGATION_STACKS.MY_ACCOUNT_STACK}
         component={TestComponent}
-        options={{ title: 'Titulares' }}
+        options={{ title: 'Perfil' }}
       />
     </MyBottomTabNavigator.Navigator>
   );

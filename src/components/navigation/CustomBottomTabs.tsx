@@ -38,7 +38,7 @@ export default function CustomBottomTabs({
 
   const screenIcon = (routeName: string, isFocused: boolean): React.ReactNode => {
     const defaultColor = '#919192';
-    const selectedColor = isFocused ? colors.MAIN_2 : defaultColor;
+    const selectedColor = isFocused ? colors.MAIN : defaultColor;
     switch (routeName) {
       case NAVIGATION_STACKS.HOME_STACK:
         return isFocused ? (
@@ -47,9 +47,17 @@ export default function CustomBottomTabs({
           <HomeOutline color={selectedColor} />
         );
       case NAVIGATION_STACKS.SEARCH_STACK:
-        return isFocused ? <BoldSearch /> : <Search color={selectedColor} />;
+        return isFocused ? (
+          <BoldSearch color={selectedColor} />
+        ) : (
+          <Search color={selectedColor} />
+        );
       case NAVIGATION_STACKS.MY_ACCOUNT_STACK:
-        return isFocused ? <BoldMyAccount /> : <MyAccount color={selectedColor} />;
+        return isFocused ? (
+          <BoldMyAccount color={selectedColor} />
+        ) : (
+          <MyAccount color={selectedColor} />
+        );
       default:
         break;
     }
