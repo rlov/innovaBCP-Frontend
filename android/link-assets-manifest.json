@@ -1,0 +1,69 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Figtree-Bold.ttf",
+      "sha1": "ab784d6541b3ac86e3ad5e8a0941e80f1844983f"
+    },
+    {
+      "path": "src/assets/fonts/Figtree-ExtraBold.ttf",
+      "sha1": "39972229860e5ec379527f6d87b5aff21a6183a7"
+    },
+    {
+      "path": "src/assets/fonts/Figtree-Light.ttf",
+      "sha1": "1aecf6ec3bf57022dd796aadc8b7738f000a4286"
+    },
+    {
+      "path": "src/assets/fonts/Figtree-Medium.ttf",
+      "sha1": "abb23ed443b2ee8f51e1fe843c8055bc7635a238"
+    },
+    {
+      "path": "src/assets/fonts/Figtree-Regular.ttf",
+      "sha1": "f9148d192a8bf4b984d82f60f658aeadd2c133d3"
+    },
+    {
+      "path": "src/assets/fonts/Figtree-SemiBold.ttf",
+      "sha1": "21b09a00065c5800021b6d2c969c83496f7d4d06"
+    },
+    {
+      "path": "src/assets/fonts/Georgia-Bold-Italic.ttf",
+      "sha1": "328b246b57108d5f175eb9a4df8f613b7207d0bf"
+    },
+    {
+      "path": "src/assets/fonts/Georgia-Bold.ttf",
+      "sha1": "ac38021bdc2af42ab902440d158467fbee37aff0"
+    },
+    {
+      "path": "src/assets/fonts/Georgia-Regular.ttf",
+      "sha1": "5d69d55862471d18f1c22132a44f05291134cbf4"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Bold.ttf",
+      "sha1": "875cf0cecd647bcf22e79d633d868c1b1ec98dfa"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Light.ttf",
+      "sha1": "e247a92158e112f8bf7b638c8d95381d66b00dbb"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Medium.ttf",
+      "sha1": "283f21b44efbdbf276ba802be2d949a36bbc4233"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Regular.ttf",
+      "sha1": "fdd3002e7d814ee47c1c1b8487c72c6bbb3a2d00"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "8a4ace9392d06bcb7f8ea2f5169b07e4c383a90d"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Medium.ttf",
+      "sha1": "fddc8b1c688ef3baed0d5a46abf5f01f0edaf02b"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Regular.ttf",
+      "sha1": "84d102488738b0ebbc7a5087973effbd54c95bd5"
+    }
+  ]
+}
