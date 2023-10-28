@@ -39,23 +39,11 @@ export default function CustomInput({
         setIsInputFocused(false);
       }}
       placeholder={placeholder}
-      /*       leftIcon={
-        <Icon
-          type={iconsTypes.FONTISTO}
-          name="search"
-          size={18}
-          color={isInputFocused ? colors.MAIN_2 : '#c1c1c1'}
-        />
-      } */
       inputStyle={[
         styles.input,
         Platform.OS === 'ios' && { fontWeight: '400' },
         { fontSize: 15 },
       ]}
-      /* rightIcon={() => {
-        if (!isSearching) return <></>;
-        return <ActivityIndicator />;
-      }} */
       containerStyle={styles.container}
       inputContainerStyle={styles.inputContainer}
     />

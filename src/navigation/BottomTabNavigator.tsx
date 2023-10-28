@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NAVIGATION_STACKS } from '../constants/navigation';
 import CustomBottomTabs from '../components/navigation/CustomBottomTabs';
 import HomeStack from './HomeStack';
+import SearchStack from './SearchStack';
 
 const MyBottomTabNavigator = createBottomTabNavigator();
 
@@ -26,7 +27,7 @@ export default function BottomTabNavigator(): JSX.Element {
       />
       <MyBottomTabNavigator.Screen
         name={NAVIGATION_STACKS.SEARCH_STACK}
-        component={TestComponent}
+        component={SearchStack}
         options={{ title: 'Explorar' }}
       />
       <MyBottomTabNavigator.Screen
