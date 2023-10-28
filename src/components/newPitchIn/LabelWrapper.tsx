@@ -17,12 +17,13 @@ export default function LabelWrapper({ label, component }: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 12,
+    marginBottom: 12,
+    marginTop: 15,
   },
   label: {
     fontFamily: 'Figtree-Medium',
     fontSize: 16,
-    marginTop: 15,
     marginBottom: 16,
+    paddingHorizontal: 12,
   },
 });

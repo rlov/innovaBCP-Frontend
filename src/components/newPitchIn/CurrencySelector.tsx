@@ -5,7 +5,7 @@ import colors from '../../constants/colors';
 
 interface Props {
   currency: string;
-  setCurrenct: React.Dispatch<React.SetStateAction<string>>;
+  setCurrency: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export default function CurrencySelector({ currency, setCurrency }: Props) {
